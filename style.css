@@ -1,2 +1,42 @@
 @charset "UTF8";
 
+body{
+    text-align: center;
+    background-color: cadetblue;
+}
+
+.celula{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    display: inline-block;
+}
+
+.X{
+    position: relative;
+}
+.X::after{
+    content: '\1F47E';
+    position: absolute;
+    line-height: 100px;
+    font-size: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.O{
+    position: relative;
+}
+.O::after{
+    content: '\1F916';
+    position: absolute;
+    line-height: 100px;
+    font-size: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
