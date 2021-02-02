@@ -15,7 +15,7 @@ body{
     height: 100px;
     background-color: coral;
     display: inline-block;
-    position: relative;
+    position: relative; 
 }
 
 
