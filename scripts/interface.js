@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    let celulas = document.querySelectorAll('.celula');
+    let squares = document.querySelectorAll('.square');
 
-    celulas.forEach((celula) => {
-        celula.addEventListener('click', handleClick);
+    squares.forEach((square) => {
+        square.addEventListener('click', handleClick);
     })
 })
 
 function handleClick(event){
 
-    let celula = event.target;
-    let position = celula.id;
+    let square = event.target;
+    let position = square.id;
 
     handleMove(position);
     updateSquares();
@@ -19,14 +19,14 @@ function handleClick(event){
 
 function updateSquares(){
 
-    let celulas = document.querySelectorAll('.celula');
+    let squares = document.querySelectorAll('.square');
 
-    celulas.forEach((celula) => {
-        let position = celula.id;
+    squares.forEach((square) => {
+        let position = square.id;
         let symbol = board[position];
 
         if(symbol != ''){
-            celula.innerHTML = `<div class="${symbol}"></div>`
+            square.innerHTML = `<div class="${symbol}"></div>`
         }
     })
 }

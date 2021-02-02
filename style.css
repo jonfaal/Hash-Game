@@ -1,20 +1,24 @@
 @charset "UTF8";
 
 body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
     text-align: center;
     background-color: cadetblue;
+    height: 100vh;
+    display: grid; /* Alinha o conteúdo */
+    place-content: center; 
 }
 
-.celula{
+.square{
     width: 100px;
     height: 100px;
     background-color: coral;
     display: inline-block;
-}
-
-.X{
     position: relative;
 }
+
+
 .X::after{
     content: '\1F47E';
     position: absolute;
@@ -26,9 +30,7 @@ body{
     left: 0;
 }
 
-.O{
-    position: relative;
-}
+
 .O::after{
     content: '\1F916';
     position: absolute;
