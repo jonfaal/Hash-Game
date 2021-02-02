@@ -3,7 +3,7 @@
 Projeto de jogo da velha produzido como exercício de javascript. 
 
 
-![utiliz](https://raw.githubusercontent.com/jonfaal/Hash_Game/main/_github/print01.jpg)
+![utiliz](https://raw.githubusercontent.com/jonfaal/Hash-Game/master/_github/print01.png)
 
 ## ⚙️ Ferramentas Utilizadas:
 - VS Code
